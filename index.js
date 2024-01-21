@@ -1,18 +1,6 @@
-document.getElementById('hindiText').addEventListener('click', function (event) {
-    if (event.target.tagName === 'P') {
-        const selectedWord = event.target.textContent.trim();
-        document.getElementById('speakButton').textContent = `Speak: ${selectedWord}`;
-        selectedText = selectedWord;
-    }
-});
-
 document.getElementById('speakButton').addEventListener('click', function () {
-    if (selectedText) {
-        speakText(selectedText);
-    }
-});
-
-function speakText(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
+    const textToSpeak = 'नमस्ते! यह एक परीक्षण है'; // Hindi text to be spoken
+    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+    utterance.lang = 'hi-IN'; // Set the language to Hindi (India)
     speechSynthesis.speak(utterance);
-}
+});
