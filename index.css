@@ -3,48 +3,54 @@ body {
     background-color: #f0f8ff;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Prevent the entire page from scrolling */
 }
 
-.story-container {
+header {
+    background-color: #4F87FF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.story-list {
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 60%;
-    margin: 20px;
-    max-height: 80vh; /* Set a maximum height for the story container */
-    overflow-y: auto; /* Enable vertical scrolling */
 }
 
-.story-title {
+h2 {
     font-size: 2em;
-    color: #ff69b4;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.story-content {
-    font-size: 1.2em;
     color: #333;
-    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.story-paragraph {
-    margin-bottom: 20px;
+.story-item {
+    margin-bottom: 10px;
 }
 
-.hindi {
-    font-size: 1.4em;
-    color: #333;
-}
-
-.english {
+.story-item a {
+    display: block;
+    padding: 10px;
+    background-color: #81A5F1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
     font-size: 1.2em;
-    color: #555;
-    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.story-item a:hover {
+    background-color: #81A5F1;
 }
