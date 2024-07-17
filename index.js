@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const contentDiv = document.getElementById('content');
 
-    contentDiv.addEventListener('dblclick', function(event) {
+    contentDiv.addEventListener('mouseup', function(event) {
         const selection = window.getSelection();
-        const selectedWord = selection.toString().trim();
+        const selectedText = selection.toString().trim();
         
-        if (selectedWord !== '') {
-            console.log('Selected Word:', selectedWord);
-            speakText(selectedWord);
+        if (selectedText !== '') {
+            console.log('Selected Text:', selectedText);
+            speakText(selectedText);
         }
     });
 });
