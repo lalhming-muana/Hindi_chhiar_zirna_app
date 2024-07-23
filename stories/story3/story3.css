@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent the entire page from scrolling */
+}
+
+.story-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 60%;
+    margin: 20px;
+    max-height: 80vh; /* Set a maximum height for the story container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.story-title {
+    font-size: 2em;
+    color: #81A5F1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.story-content {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.story-paragraph {
+    margin-bottom: 20px;
+}
+
+.hindi {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.english {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 5px;
+}

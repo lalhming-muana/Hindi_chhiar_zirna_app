@@ -54,3 +54,24 @@ h2 {
 .story-item a:hover {
     background-color: #81A5F1;
 }
+
+#title{
+    text-align: center;
+}
+/* Container for the image */
+.image-container {
+    width: 100%; /* Full width of the parent element */
+    height: 60vh; /* 30% of the viewport height */
+    overflow: hidden; /* Hide overflow if the image is larger */
+    position: relative; /* Positioning context for the image */
+}
+
+/* Style for the image */
+.image-container img {
+    position: absolute; /* Remove the image from the normal document flow */
+    top: 0; /* Align the image to the top of the container */
+    left: 0; /* Align the image to the left of the container */
+    width: 100%; /* Make the image fill the container's width */
+    height: 100%; /* Make the image fill the container's height */
+    object-fit: cover; /* Ensure the image covers the container while maintaining its aspect ratio */
+}
